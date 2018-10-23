@@ -5,14 +5,15 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.json$/,
-        loader: 'json-loader'
+        use: 'json-loader'
       },
       {
-        test: /\.js$/,
-        loader: 'babel-loader'
+        test: /\.js$/, 
+        exclude: /node_modules/,
+        use: 'babel-loader'
       }
     ]
   }

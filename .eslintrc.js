@@ -6,7 +6,7 @@ module.exports = {
     "es6": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
@@ -14,12 +14,11 @@ module.exports = {
     },
     "sourceType": "module"
   },
-  "plugins": [ "react" ],
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error","unix"],
     "quotes": ["error","single"],
-    "semi": ["error","always"],
+    // "semi": ["error","always"],
     "no-console": ["warn", { "allow": ["info", "error"] }]
   }
 };
